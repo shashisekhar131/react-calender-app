@@ -1,0 +1,84 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.grid-item {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.current-date {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.data-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+}
+.data-form .close-btn {
+  position: absolute;
+  right: 0;
+  top: -120%;
+  color: red;
+  background-color: black;
+  border-radius: 50%;
+  padding: 2px 8px 2px 8px;
+  cursor: pointer;
+}
+
+.data-form input {
+  height: 30px;
+}
+
+.form-container {
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+}
+button {
+  cursor: pointer;
+}
+.add-btn {
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(52, 65, 157);
+
+  color: white;
+}
+
+.delete-btn,
+.save-btn {
+  margin: 15px;
+  padding: 8px;
+}
+
+.calender-top button {
+  padding: 8px;
+}
+.task-name {
+  margin: 15px;
+}
+
+.calender-top {
+  text-align: center;
+  margin: 15px;
+}
